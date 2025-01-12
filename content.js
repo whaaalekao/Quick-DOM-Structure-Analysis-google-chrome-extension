@@ -14,6 +14,8 @@ function getXPath(element) {
       classList: [...element.classList].join(" ") || "N/A",
       xpath: getXPath(element),
       cssSelector: `${element.tagName.toLowerCase()}${element.id ? `#${element.id}` : ""}${[...element.classList].map(cls => `.${cls}`).join("")}`,
+      innerText: element.innerText.trim() || "（無文字內容）",
+      innerHTML: element.innerHTML.trim() || "（無 HTML 內容）",
     };
   
     // 發送 DOM 資訊到 background.js
