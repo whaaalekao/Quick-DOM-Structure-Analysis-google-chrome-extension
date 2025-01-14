@@ -40,7 +40,7 @@ The plugin displays detailed DOM node information for elements hovered over with
 該插件能夠顯示鼠標懸停元素的 DOM 節點詳細信息，並在右側彈出窗口中展示這些數據。通過這個工具，用戶可以更高效地理解和操作網頁結構。
 
 ## 核心功能
-1. **DOM 節點高亮與詳細信息顯示**
+1. **DOM 詳細信息顯示**
    - 用戶將鼠標懸停在網頁元素上時，會顯示其對應的 DOM 節點詳細信息（如標籤名稱、ID、類名、屬性等）。
      (按下command或control可停止分析)
 
