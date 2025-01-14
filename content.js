@@ -1,8 +1,9 @@
+    // 得到xpah
 function getXPath(element) {
     if (element.id) return `//*[@id="${element.id}"]`;
     if (element === document.body) return "/html/body";
-    const index = [...element.parentNode.children].indexOf(element) + 1;
-    return `${getXPath(element.parentNode)}/${element.tagName.toLowerCase()}[${index}]`;
+        const index = [...element.parentNode.children].indexOf(element) + 1;
+        return `${getXPath(element.parentNode)}/${element.tagName.toLowerCase()}[${index}]`;
   }
   
   function onMouseMove(event) {
@@ -18,10 +19,10 @@ function getXPath(element) {
       innerHTML: element.innerHTML.trim() || "（無 HTML 內容）",
     };
   
-    // 發送 DOM 資訊到 background.js
+    // 發送資訊到 background.js
     chrome.runtime.sendMessage({ type: "updateDomDetails", data: domDetails });
-  }
+    
+    }
   
-  // 初始化
-  document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mousemove", onMouseMove);
   

@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DOM 節點助手</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    #info {
-      padding: 10px;
-      font-size: 12px;
-      line-height: 1.5;
-    }
-    pre {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      background-color: #f4f4f4;
-      padding: 10px;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
-  <div id="info">
-    <h3>DOM 節點詳細信息</h3>
-    <pre id="dom-details">等待滑鼠移動更新...</pre>
-    <h3>元素內容（文字）</h3>
-    <pre id="element-text">等待滑鼠移動更新...</pre>
-    <h3>元素內容（HTML）</h3>
-    <pre id="element-html">等待滑鼠移動更新...</pre>
-  </div>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      #info {
+        padding: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        min-width: 500px;
+      }
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="info">
+      <h3>Details of DOM Nodes</h3>
+      <pre id="dom-details">Waiting for mouse movement update...</pre>
+      <h3>Element Content (Text)</h3>
+      <pre id="element-text">Waiting for mouse movement update...</pre>
+      <h3>Element Content (HTML)</h3>
+      <pre id="element-html">Waiting for mouse movement update...</pre>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>
